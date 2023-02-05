@@ -26,17 +26,17 @@ body {
   background-repeat: repeat-x;
   background-color: $paleBlue;
   min-height: 100vh;
+  padding: 0.625rem;
 }
 .order-summary-container {
   max-width: 28.125rem;
-  min-height: 43.75rem;
-  border-radius: 1rem;
+  min-height: 35.5rem;
+  border-radius: 1.35rem;
   overflow: hidden;
   background-color: white;
   display: flex;
   flex-direction: column;
   box-shadow: 0 1rem 1rem hsla(0, 0%, 0%, 0.05);
-  margin: 0.625rem 0.625rem 0 0.625rem;
   img {
     max-width: 100%;
   }
@@ -46,15 +46,16 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-grow: 1;
-    padding: 3rem;
+    padding: 1.5rem;
     h1 {
-      font-size: 1.725rem;
+      font-size: 1.5rem;
       font-weight: 900;
     }
     > p {
       text-align: center;
       color: $desaturatedBlue;
       line-height: 1.6rem;
+      padding: 0 1rem;
     }
     .order-summary-plan-container {
       display: flex;
@@ -62,13 +63,13 @@ body {
       background-color: $veryPaleBlue;
       border-radius: 1rem;
       width: 100%;
-      height: 6.25rem;
-      padding: 1.55rem;
+      height: 5rem;
+      padding: 1rem;
       .order-summary-plan-price {
         margin-left: 1rem;
         p:first-child {
           font-weight: 900;
-          margin-bottom: 0.3rem;
+          margin-bottom: 0.1rem;
         }
         p:last-child {
           color: $desaturatedBlue;
@@ -95,6 +96,7 @@ body {
       background-color: $brightBlue;
       width: 100%;
       height: 3rem;
+      border: none;
       border-radius: 0.625rem;
       color: $veryPaleBlue;
       font-weight: bold;
@@ -103,6 +105,7 @@ body {
       justify-content: center;
       align-items: center;
       text-decoration: none;
+      box-shadow: 0 1rem 1rem rgba($darkBlue, 0.2);
     }
     .proceed:hover {
       background-color: $hoverBlue;
@@ -112,7 +115,7 @@ body {
       color: $desaturatedBlue;
       font-weight: 900;
       font-size: 0.95rem;
-      margin-top: 1rem;
+      margin-top: 0.5rem;
     }
     .cancel:hover {
       color: $darkBlue;
@@ -125,7 +128,7 @@ footer {
   font-size: 0.8rem;
   p {
     color: $desaturatedBlue;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.1rem;
   }
   i {
     font-size: 0.9rem;
@@ -142,5 +145,29 @@ footer {
 @media only screen and (min-width: 481px) {
   body {
     background-image: url("images/pattern-background-desktop.svg");
+  }
+  .order-summary-container {
+    min-height: 43.75rem;
+    .order-summary-info {
+      padding: 3rem;
+      h1 {
+        font-size: 1.725rem;
+      }
+      > p {
+        padding: 0;
+      }
+      .order-summary-plan-container {
+        height: 6.25rem;
+        padding: 1.55rem;
+        .order-summary-plan-price {
+          p:first-child {
+            margin-bottom: 0.3rem;
+          }
+        }
+      }
+    }
+    .cancel {
+      margin-top: 1rem;
+    }
   }
 }

@@ -17,18 +17,18 @@ body {
   background-repeat: repeat-x;
   background-color: hsl(225deg, 100%, 94%);
   min-height: 100vh;
+  padding: 0.625rem;
 }
 
 .order-summary-container {
   max-width: 28.125rem;
-  min-height: 43.75rem;
-  border-radius: 1rem;
+  min-height: 35.5rem;
+  border-radius: 1.35rem;
   overflow: hidden;
   background-color: white;
   display: flex;
   flex-direction: column;
   box-shadow: 0 1rem 1rem hsla(0deg, 0%, 0%, 0.05);
-  margin: 0.625rem 0.625rem 0 0.625rem;
 }
 .order-summary-container img {
   max-width: 100%;
@@ -39,16 +39,17 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-grow: 1;
-  padding: 3rem;
+  padding: 1.5rem;
 }
 .order-summary-container .order-summary-info h1 {
-  font-size: 1.725rem;
+  font-size: 1.5rem;
   font-weight: 900;
 }
 .order-summary-container .order-summary-info > p {
   text-align: center;
   color: hsl(224deg, 23%, 55%);
   line-height: 1.6rem;
+  padding: 0 1rem;
 }
 .order-summary-container .order-summary-info .order-summary-plan-container {
   display: flex;
@@ -56,15 +57,15 @@ body {
   background-color: hsl(225deg, 100%, 98%);
   border-radius: 1rem;
   width: 100%;
-  height: 6.25rem;
-  padding: 1.55rem;
+  height: 5rem;
+  padding: 1rem;
 }
 .order-summary-container .order-summary-info .order-summary-plan-container .order-summary-plan-price {
   margin-left: 1rem;
 }
 .order-summary-container .order-summary-info .order-summary-plan-container .order-summary-plan-price p:first-child {
   font-weight: 900;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.1rem;
 }
 .order-summary-container .order-summary-info .order-summary-plan-container .order-summary-plan-price p:last-child {
   color: hsl(224deg, 23%, 55%);
@@ -89,6 +90,7 @@ body {
   background-color: hsl(245deg, 75%, 52%);
   width: 100%;
   height: 3rem;
+  border: none;
   border-radius: 0.625rem;
   color: hsl(225deg, 100%, 98%);
   font-weight: bold;
@@ -97,6 +99,7 @@ body {
   justify-content: center;
   align-items: center;
   text-decoration: none;
+  box-shadow: 0 1rem 1rem rgba(31, 47, 86, 0.2);
 }
 .order-summary-container .order-summary-info .proceed:hover {
   background-color: hsl(245deg, 83%, 68%);
@@ -106,7 +109,7 @@ body {
   color: hsl(224deg, 23%, 55%);
   font-weight: 900;
   font-size: 0.95rem;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 .order-summary-container .order-summary-info .cancel:hover {
   color: hsl(223deg, 47%, 23%);
@@ -119,7 +122,7 @@ footer {
 }
 footer p {
   color: hsl(224deg, 23%, 55%);
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.1rem;
 }
 footer i {
   font-size: 0.9rem;
@@ -135,5 +138,27 @@ footer a:hover {
 @media only screen and (min-width: 481px) {
   body {
     background-image: url("images/pattern-background-desktop.svg");
+  }
+  .order-summary-container {
+    min-height: 43.75rem;
+  }
+  .order-summary-container .order-summary-info {
+    padding: 3rem;
+  }
+  .order-summary-container .order-summary-info h1 {
+    font-size: 1.725rem;
+  }
+  .order-summary-container .order-summary-info > p {
+    padding: 0;
+  }
+  .order-summary-container .order-summary-info .order-summary-plan-container {
+    height: 6.25rem;
+    padding: 1.55rem;
+  }
+  .order-summary-container .order-summary-info .order-summary-plan-container .order-summary-plan-price p:first-child {
+    margin-bottom: 0.3rem;
+  }
+  .order-summary-container .cancel {
+    margin-top: 1rem;
   }
 }/*# sourceMappingURL=style.css.map */
