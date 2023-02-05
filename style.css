@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Red Hat Display", sans-serif;
+  color: hsl(223deg, 47%, 23%);
+  background-image: url("images/pattern-background-mobile.svg");
+  background-size: auto 50%;
+  background-repeat: repeat-x;
+  background-color: hsl(225deg, 100%, 94%);
+  min-height: 100vh;
+}
+
+.order-summary-container {
+  max-width: 28.125rem;
+  min-height: 43.75rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 1rem 1rem hsla(0deg, 0%, 0%, 0.05);
+  margin: 0.625rem 0.625rem 0 0.625rem;
+}
+.order-summary-container img {
+  max-width: 100%;
+}
+.order-summary-container .order-summary-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  padding: 3rem;
+}
+.order-summary-container .order-summary-info h1 {
+  font-size: 1.725rem;
+  font-weight: 900;
+}
+.order-summary-container .order-summary-info > p {
+  text-align: center;
+  color: hsl(224deg, 23%, 55%);
+  line-height: 1.6rem;
+}
+.order-summary-container .order-summary-info .order-summary-plan-container {
+  display: flex;
+  align-items: center;
+  background-color: hsl(225deg, 100%, 98%);
+  border-radius: 1rem;
+  width: 100%;
+  height: 6.25rem;
+  padding: 1.55rem;
+}
+.order-summary-container .order-summary-info .order-summary-plan-container .order-summary-plan-price {
+  margin-left: 1rem;
+}
+.order-summary-container .order-summary-info .order-summary-plan-container .order-summary-plan-price p:first-child {
+  font-weight: 900;
+  margin-bottom: 0.3rem;
+}
+.order-summary-container .order-summary-info .order-summary-plan-container .order-summary-plan-price p:last-child {
+  color: hsl(224deg, 23%, 55%);
+}
+.order-summary-container .order-summary-info .order-summary-plan-container a {
+  margin-left: auto;
+  font-weight: 900;
+  font-size: 0.9rem;
+  color: hsl(245deg, 75%, 52%);
+}
+.order-summary-container .order-summary-info .order-summary-plan-container a:hover {
+  color: hsl(245deg, 83%, 68%);
+  text-decoration: none;
+}
+.order-summary-container .order-summary-info .music-icon {
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  background-image: url("images/icon-music.svg");
+}
+.order-summary-container .order-summary-info .proceed {
+  background-color: hsl(245deg, 75%, 52%);
+  width: 100%;
+  height: 3rem;
+  border-radius: 0.625rem;
+  color: hsl(225deg, 100%, 98%);
+  font-weight: bold;
+  font-size: 0.95rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.order-summary-container .order-summary-info .proceed:hover {
+  background-color: hsl(245deg, 83%, 68%);
+}
+.order-summary-container .order-summary-info .cancel {
+  text-decoration: none;
+  color: hsl(224deg, 23%, 55%);
+  font-weight: 900;
+  font-size: 0.95rem;
+  margin-top: 1rem;
+}
+.order-summary-container .order-summary-info .cancel:hover {
+  color: hsl(223deg, 47%, 23%);
+}
+
+footer {
+  padding: 0.625rem;
+  text-align: center;
+  font-size: 0.8rem;
+}
+footer p {
+  color: hsl(224deg, 23%, 55%);
+  margin-bottom: 0.3rem;
+}
+footer i {
+  font-size: 0.9rem;
+}
+footer a {
+  color: hsl(224deg, 23%, 55%);
+}
+footer a:hover {
+  color: hsl(223deg, 47%, 23%);
+  transition: 700ms;
+}
+
+@media only screen and (min-width: 481px) {
+  body {
+    background-image: url("images/pattern-background-desktop.svg");
+  }
+}/*# sourceMappingURL=style.css.map */

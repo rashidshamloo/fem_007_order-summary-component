@@ -1,0 +1,146 @@
+//font
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+//color variables
+$paleBlue: hsl(225, 100%, 94%);
+$brightBlue: hsl(245, 75%, 52%);
+$veryPaleBlue: hsl(225, 100%, 98%);
+$desaturatedBlue: hsl(224, 23%, 55%);
+$darkBlue: hsl(223, 47%, 23%);
+$hoverBlue: hsl(245, 83%, 68%);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Red Hat Display", sans-serif;
+  color: $darkBlue;
+  background-image: url("images/pattern-background-mobile.svg");
+  background-size: auto 50%;
+  background-repeat: repeat-x;
+  background-color: $paleBlue;
+  min-height: 100vh;
+}
+.order-summary-container {
+  max-width: 28.125rem;
+  min-height: 43.75rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 1rem 1rem hsla(0, 0%, 0%, 0.05);
+  margin: 0.625rem 0.625rem 0 0.625rem;
+  img {
+    max-width: 100%;
+  }
+  .order-summary-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    padding: 3rem;
+    h1 {
+      font-size: 1.725rem;
+      font-weight: 900;
+    }
+    > p {
+      text-align: center;
+      color: $desaturatedBlue;
+      line-height: 1.6rem;
+    }
+    .order-summary-plan-container {
+      display: flex;
+      align-items: center;
+      background-color: $veryPaleBlue;
+      border-radius: 1rem;
+      width: 100%;
+      height: 6.25rem;
+      padding: 1.55rem;
+      .order-summary-plan-price {
+        margin-left: 1rem;
+        p:first-child {
+          font-weight: 900;
+          margin-bottom: 0.3rem;
+        }
+        p:last-child {
+          color: $desaturatedBlue;
+        }
+      }
+      a {
+        margin-left: auto;
+        font-weight: 900;
+        font-size: 0.9rem;
+        color: $brightBlue;
+      }
+      a:hover {
+        color: $hoverBlue;
+        text-decoration: none;
+      }
+    }
+    .music-icon {
+      border-radius: 50%;
+      width: 3rem;
+      height: 3rem;
+      background-image: url("images/icon-music.svg");
+    }
+    .proceed {
+      background-color: $brightBlue;
+      width: 100%;
+      height: 3rem;
+      border-radius: 0.625rem;
+      color: $veryPaleBlue;
+      font-weight: bold;
+      font-size: 0.95rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+    }
+    .proceed:hover {
+      background-color: $hoverBlue;
+    }
+    .cancel {
+      text-decoration: none;
+      color: $desaturatedBlue;
+      font-weight: 900;
+      font-size: 0.95rem;
+      margin-top: 1rem;
+    }
+    .cancel:hover {
+      color: $darkBlue;
+    }
+  }
+}
+footer {
+  padding: 0.625rem;
+  text-align: center;
+  font-size: 0.8rem;
+  p {
+    color: $desaturatedBlue;
+    margin-bottom: 0.3rem;
+  }
+  i {
+    font-size: 0.9rem;
+  }
+  a {
+    color: $desaturatedBlue;
+  }
+  a:hover {
+    color: $darkBlue;
+    transition: 700ms;
+  }
+}
+
+@media only screen and (min-width: 481px) {
+  body {
+    background-image: url("images/pattern-background-desktop.svg");
+  }
+}
